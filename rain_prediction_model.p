@@ -32,9 +32,9 @@ from sklearn.svm import SVC
 from sklearn.impute import KNNImputer
 import pickle
 
-df1 = pd.read_csv('/content/drive/MyDrive/Colab Notebooks/ProjectData2.csv')
-df2 = pd.read_csv('/content/drive/MyDrive/Colab Notebooks/imd.csv')
-dfs = pd.read_csv('/content/drive/MyDrive/Colab Notebooks/synop00.csv')
+df1 = pd.read_csv('/ProjectData2.csv')
+df2 = pd.read_csv('/imd.csv')
+dfs = pd.read_csv('/synop00.csv')
 
 df2['DATE'] = df2['YEAR'].apply(str)+' '+df2['MN'].apply(str)+' '+df2['DT'].apply(str)
 dfs['DATE'] = dfs['YEAR'].apply(str)+' '+dfs['MN'].apply(str)+' '+dfs['DT'].apply(str)
